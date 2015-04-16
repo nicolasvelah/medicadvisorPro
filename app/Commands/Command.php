@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace MedicAdvisor\Commands;
 
 abstract class Command {
 

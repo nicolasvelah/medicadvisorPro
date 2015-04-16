@@ -28,6 +28,7 @@ class CreateUsersTable extends Migration {
 			$table->string('city');
 			$table->string('address');
 			$table->string('medals');
+            $table->enum('type', ['patient', 'doctor', 'admin', 'superAdmin']);
 			$table->rememberToken();
 			$table->timestamps();
 		});

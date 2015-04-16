@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace MedicAdvisor\Events;
 
 abstract class Event {
 

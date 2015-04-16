@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: MedicAdvisor
+        psr4_prefix: MedicAdvisor
         src_path: app
