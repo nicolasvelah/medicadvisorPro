@@ -22,13 +22,6 @@
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Address</label>
 							<div class="col-md-6">
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
@@ -48,6 +41,84 @@
 								<input type="password" class="form-control" name="password_confirmation">
 							</div>
 						</div>
+
+						<div class="form-group">
+                            <label class="col-md-4 control-label">Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Last Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="lastname" value="{{ old('lastname') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Phone</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="phone" value="{{ old('phone') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Blood Type</label>
+                            <div class="col-md-6">
+                               <select name="blood_type">
+                                 <option value="o-">o-</option>
+                                 <option value="o+">o+</option>
+                                 <option value="a+">a+</option>
+                                 <option value="a-">a-</option>
+                                 <option value="b+">b+</option>
+                                 <option value="b-">b-</option>
+                                 <option value="ab+">ab+</option>
+                                 <option value="ab-">ab-</option>
+                               </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Aceptas entrar en la base de datos de Donantes de sangre?</label>
+                            <label class="radio-inline">
+                              <input type="radio" name="donor" id="inlineRadio1" value="true"> Si
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="donor" id="inlineRadio2" value="false"> No
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Country</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="country" value="{{ old('country') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">City</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="city" value="{{ old('city') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Address</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="address" value="{{ old('address') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Perfil</label>
+                            <div class="col-md-6">
+                               <select name="type">
+                                 <option value="patient">Patient</option>
+                                 <option value="doctor">Doctor</option>
+                               </select>
+                            </div>
+                        </div>
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

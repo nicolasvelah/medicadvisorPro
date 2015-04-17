@@ -26,7 +26,6 @@ class CreateServicesTable extends Migration {
 			$table->string('city');
 			$table->string('address');
 			$table->string('map');
-			$table->string('contact');
 			$table->string('parent');
 			$table->string('media');
 			$table->string('medals');

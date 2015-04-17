@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Laracasts\TestDummy\Factory as TestDummy;
 use Illuminate\Support\Str;
 
-// composer require laracasts/testdummy
-use Laracasts\TestDummy\Factory as TestDummy;
-
-class SpecialtyTableSeeder extends Seeder {
+class DiseasesTableSeeder extends Seeder {
 
     public function run()
     {
@@ -16,10 +14,10 @@ class SpecialtyTableSeeder extends Seeder {
 
             $fullName = $faker->word;
 
-           \DB::table('specialty')->insert(array(
+            \DB::table('diseases')->insert(array(
                 'name' => $fullName,
                 'slug' => Str::slug($fullName),
-                'disease_ids' => $faker->numberBetween($min = 0, $max = 29),
+                'specialty_ids' => $faker->numberBetween($min = 0, $max = 29),
                 'description' => $faker->paragraph($nbSentences = 5)
             ));
 
@@ -27,3 +25,4 @@ class SpecialtyTableSeeder extends Seeder {
     }
 
 }
+
